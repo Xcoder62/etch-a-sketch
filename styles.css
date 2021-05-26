@@ -1,0 +1,146 @@
+/*
+Colors 
+https://colors.lol/ectophytic
+ectophytic light grey blue    #9DBCD4
+store bright yellow           #FFFD01
+undiagnosed light indigo      #6D5ACF
+
+Fonts 
+
+https://www.fontpair.co/pairing/spectral-and-karla
+
+TODO: grid should be 300x300 for phones
+TODO: Create color variables.
+
+*/
+
+:root {
+    --debug:        #FF073A;
+    --greyBlue:     #9DBCD4;
+    --brightYellow: #FFFD01;
+    --lightIndigo:  #6D5ACF;
+    --mainBody:     #555;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    height: 100%;
+    background: linear-gradient(180deg, var(--greyBlue) 0%, rgba(157,188,212,0.51) 100%);
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 12px;
+}
+
+section {
+    width:100%;
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.title {
+    /*border: 1px solid var(--debug); */
+    height: 70px;
+    font-family: 'Spectral', serif;
+    color: var(--lightIndigo);
+    font-size: 2em;
+    line-height: 1.5em;
+
+}
+
+.buttons {
+    /*border: 1px solid var(--debug); */
+    height: 80px;
+}
+
+.slider {
+    border: 1px solid var(--debug);
+    height: 100px;
+}
+
+.grid {
+    border: 1px solid var(--debug);
+    height: auto;
+}
+
+.buttons-container {
+    /*border: 1px solid var(--debug);*/
+    height: 50%;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid var(--debug);
+}
+
+.btn {
+    background-color: var(--brightYellow);
+    border: 3px solid var(--lightIndigo);
+    /*padding: .3em .6em; */
+    width: 8em;
+    height: 30px;
+    cursor: pointer;
+    
+}
+
+
+
+.btn-pick{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16px;
+}
+
+
+input[type="color"] {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 30px;
+    /*border: 3px solid var(--lightIndigo);*/
+    background-color: var(--lightIndigo);
+    outline: none;
+    cursor: pointer;
+    margin-right: 15px;
+    
+    
+}
+/*
+input[type="color" i] {
+    background-color: ;
+}
+*/
+.pick {
+    display: flex;
+    align-items: flex-top;
+}
+
+::-moz-color-swatch {
+    border-color: #FF0303;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-color: var(--lightIndigo);
+}
