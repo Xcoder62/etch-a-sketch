@@ -67,10 +67,6 @@ section {
     height: 80px;
 }
 
-.slider {
-    border: 1px solid var(--debug);
-    height: 100px;
-}
 
 .grid {
     border: 1px solid var(--debug);
@@ -143,4 +139,55 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 
 input[type="color"]::-webkit-color-swatch {
     border-color: var(--lightIndigo);
+}
+
+.slidecontainer {
+    width: 50%;
+    /*border: 1px solid var(--brightYellow);*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn.set {
+    margin-left: 30px;
+    margin-right: 9.5px;
+}
+
+/* The slider itself */
+.barslider {
+    -webkit-appearance: none; /* override default css styles */
+    appearance: none;
+    width: 50%; /* full width */
+    height: 15px; /* specified height */
+    background: var(--brightYellow); /* yellow background */
+    outline: none; /* remove outline */
+    opacity: 0.7; /* set transparency (for mouse-ver effects on hover) */
+    -webkit-transition: .2s; /* transtion on hover */
+    transition: opacity .2s;
+    border: 3px solid var(--lightIndigo); /* purple border */
+    border-radius: 10px; /* round out edges of bar */
+
+}
+
+/* slider section */
+.slider {
+    height: 50px;
+    /*border: none;*/
+}
+
+/* Mouse over effects */
+.barslider:hover {
+    opacity: 1; /* fully show over mouse-over */
+}
+
+/* slider handle */
+.barslider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* override default look */
+    appearance: none;
+    width: 25px; /* set slider handle width */
+    height: 25px; /* set slider handle height */
+    background: var(--lightIndigo); /* purple background */
+    cursor: pointer; /* cursor on hover */
+    border-radius: 50%;
 }
