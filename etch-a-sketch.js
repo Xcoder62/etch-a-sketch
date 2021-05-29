@@ -29,6 +29,7 @@ function initSlider() {
     
 }
 
+// Function that finds the size of each box depending on the user's selected-grid-size
 function setGridSize() {
     // Get the value the slider is set too
     let gridValue = document.querySelector(".grid-size-value")
@@ -86,14 +87,7 @@ initSlider();
 setButton = document.querySelector('.set');
 setButton.addEventListener("click", setGridSize);
 
-// setGridSize();
-
-
-//console.log(getBoxWidthHeight(gridContainerSize, selectedGridSize))
-
-// TODO: Function that finds the size of each box depending on the user's selected-grid-size, selected-grid-color
-
-// TODO: Variable for which color to change to on hover (default black)
+// TODO: Variable for which color to change to on hover (default black) selected-grid-color
 // TOOD: Event listener on each box to listen when the box is hovered over
 // TODO: When a button is clicked, border white, blur it and deselect the other button by giving it's class back
 // TODO: change selected color based on which button is selected (the button selected should change the selected color variable
