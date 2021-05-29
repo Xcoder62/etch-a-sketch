@@ -10,4 +10,4 @@ Etch-A-Sketch Project from the odin project
 
 ## Nice to Haves
 - [x] A task list for nice to have features. 
-- [] set button is gray and inactive if grid size value hasn't changed, otherwise is yellow and active
+- [ ] set button is gray and inactive if grid size value hasn't changed, otherwise is yellow and active
