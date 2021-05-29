@@ -62,6 +62,12 @@ function setBoxColor(e){
             let randomSelection = Math.floor(Math.random() * 7);
             e.srcElement.style.backgroundColor = rainbowColors[randomSelection];
             break;
+        case "pick":
+            // when pick selected, change the selected color to the choosen one.
+            let colorPickerValue = document.querySelector('#selected-color').value;
+            e.srcElement.style.backgroundColor = colorPickerValue;
+            break;
+        
 
     }
 }
@@ -182,16 +188,3 @@ btns[2].addEventListener('click', function() {
 btns[3].addEventListener('click', function() {
     resetGrid();
 })
-
-
-
-
-
-
-
-
-
-
-
-// TODO: when pick selected, change the selected color to the choosen one.
-// TODO: when set is pressed, change it to a grey button that's unclickable until the slider is changed from the selected-grid-size
