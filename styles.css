@@ -231,4 +231,5 @@ input[type="color"]::-webkit-color-swatch {
     background-color: #FFFFFF;
     border: 1px solid black;
     display: block;
+    transition: .3s
 }

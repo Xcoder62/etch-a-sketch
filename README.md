@@ -10,4 +10,6 @@ Etch-A-Sketch Project from the odin project
 
 ## Nice to Haves ✨
 - [x] A task list for nice to have features. 
+- [ ] Mobile Responsive design (use figma to design mobile version then implement it)
 - [ ] set button is gray and inactive if grid size value hasn't changed, otherwise is yellow and active
+- [ ] Erase button: when hovering over an already covered box, convert the box back to white.
