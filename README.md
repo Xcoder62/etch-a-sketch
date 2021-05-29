@@ -1,6 +1,6 @@
 # About
 
-Etch-A-Sketch Project from the odin project
+Etch-A-Sketch Project from [the odin project](https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/etch-a-sketch-project)
 
 ## See it live :rocket:
 [Etch-A-Sketch](https://xcoder62.github.io/etch-a-sketch/)
