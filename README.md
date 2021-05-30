@@ -11,5 +11,8 @@ Etch-A-Sketch Project from [the odin project](https://www.theodinproject.com/pat
 ## Nice to Haves ✨
 - [x] A task list for nice to have features. 
 - [ ] Mobile Responsive design (use figma to design mobile version then implement it)
+- [ ] Going from desktop to mobile removes progress, should change the box sizes but not delete the progress made.
 - [ ] set button is gray and inactive if grid size value hasn't changed, otherwise is yellow and active
 - [ ] Erase button: when hovering over an already covered box, convert the box back to white.
+- [ ] Export art as png
+ 

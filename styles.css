@@ -234,3 +234,45 @@ input[type="color"]::-webkit-color-swatch {
     transition: .3s;
     /*color: #FF0303;*/
 }
+
+/* Mobile Style */
+@media only screen and (max-width: 960px) {
+    .page {
+        width:100%;
+    }
+
+
+    .buttons {
+        height: 100px;
+    }
+
+
+    .buttons-container {
+        flex-wrap: wrap;
+        height: inherit;
+        /*margin-top: 10px;*/
+        justify-content: center;
+        align-items: center;
+        width:300px;
+        /*border: 1px solid red;*/
+        margin-bottom: 15px;
+
+    }
+    
+
+    .buttons-container button {
+        width: 25vw;
+        max-width: 120px;
+        margin-right: 10px;
+        
+    }
+
+    .grid-size-section {
+        margin-top: 15px;
+    }
+
+    .grid-container {
+        width: 310px;
+        height: 310px;
+    }
+}

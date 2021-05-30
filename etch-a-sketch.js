@@ -115,6 +115,15 @@ function initGrid(containerSize, gridSize) {
     // default is 4x4
     let gridContainer = document.querySelector('.grid-container')
     //console.log(gridContainer)
+
+    //reset the grid container, useful if switching from desktop to mobile
+    
+    if (gridContainer.firstChild) {
+        while(gridContainer.firstChild) {
+            gridContainer.removeChild(gridContainer.firstChild);
+        }
+    }
+
     
 
     let TotalAmountOfBoxes = getTotalAmountOfBoxes(gridSize);
@@ -144,9 +153,38 @@ let gridContainerSize = 500;
 let selectedBoxColor = "black";
 let selectedGridSize = 4;
 let colorMode = "black";
+let deviceMode = "";
+
+// reinitialize grid if going mobile
+if (window.innerWidth < 960) {
+    console.log("mobile mode.")
+    deviceMode = "mobile"
+    gridContainerSize = 300;
+    initGrid(gridContainerSize, selectedGridSize);
+} else {
+    deviceMode = "desktop"
+    initGrid(gridContainerSize, selectedGridSize);
+}
+
+// Mobile vs Desktop event listeners
+
+window.addEventListener("resize", function () {
+    // if this is a desktop...
+    if (window.matchMedia("(min-width: 961px)").matches && deviceMode == "mobile") {
+        console.log("desktop mode.")
+        deviceMode = "desktop"
+        gridContainerSize = 500;
+        initGrid(gridContainerSize, selectedGridSize);
+    } else if (window.matchMedia("(max-width: 960px)").matches && deviceMode == "desktop") {
+        // we are on mobile, reset the grid
+        console.log("mobile mode.")
+        deviceMode = "mobile"
+        gridContainerSize = 300;
+        initGrid(gridContainerSize, selectedGridSize);
+    }
+})
 
 
-initGrid(gridContainerSize, selectedGridSize);
 initSlider();
 
 // BUTTON EVENT LISTENERS
@@ -188,3 +226,4 @@ btns[2].addEventListener('click', function() {
 btns[3].addEventListener('click', function() {
     resetGrid();
 })
+
