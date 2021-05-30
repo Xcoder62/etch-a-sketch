@@ -165,6 +165,7 @@ if (window.innerWidth < 960) {
     deviceMode = "desktop"
     initGrid(gridContainerSize, selectedGridSize);
 }
+//
 
 // Mobile vs Desktop event listeners
 
